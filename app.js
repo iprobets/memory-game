@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
+    //display the cards randomly at new game
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    //Check for match between cards
     function checkForMatch() {
         var cards = document.querySelectorAll('img')
         const optionOneid = cardsChosenId[0]
